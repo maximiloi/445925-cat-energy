@@ -4,79 +4,110 @@
   background-color: @white;
 
   &--grey {
-    background-color: @concrete;
     padding-top: 32px;
+    background-color: @concrete;
   }
 }
 
+.contacts br {
+  display: none;
+}
+
 .contacts__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-align: left;
   margin: 0;
-  padding: 0;
   margin-left: 20px;
+  padding: 0;
   width: 143px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 20px;
+}
+
+.contacts__title br {
+  display: inline;
 }
 
 .contacts__address {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
   margin: 0;
-  padding: 0;
-  text-align: left;
   margin-right: 20px;
-  width: 140px;
   margin-bottom: 28px;
+  padding: 0;
+  width: 140px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
 }
 
 .contacts__map {
-  max-width: 320px;
-  height: 360px;
-  display: block;
-  background-image: url("@{images}/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right bottom;
   position: relative;
+  box-sizing: content-box;
+  margin: auto 0;
+}
+
+.contacts__map-picture {
+  width: 320px;
+  height: 360px;
 }
 
 .contacts__map-pin {
   position: absolute;
-  background-image: url("@{images}/map-pin.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   top: 137px;
   left: 129px;
   width: 55px;
   height: 53px;
+  background-image: url("@{images}/map-pin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 0;
 }
-
 @media (min-width: @tablet-width) {
   .contacts {
     justify-content: space-between;
-    padding-top: 65px;
+    margin: 0 auto;
+    padding: 65px 72px 25px;
+  }
+
+  .contacts br {
+    display: inline;
   }
 
   .contacts__title {
-    font-size: 20px;
-    line-height: 25px;
     margin: 0;
     width: 200px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .contacts__address {
+    margin-top: -1px;
+    margin-right: 0;
+    width: 155px;
+    text-align: right;
     font-size: 16px;
     line-height: 20px;
-    text-align: right;
-    width: 155px;
-    margin-right: 0;
-    margin-top: -1px;
+  }
+
+  .contacts__map {
+    position: relative;
+    box-sizing: content-box;
+    margin: auto 0;
+    max-width: @tablet-width;
+  }
+
+  .contacts__map-picture {
+    width: 768px;
+    height: 400px;
+  }
+
+  .contacts__map-pin {
+    top: 150px;
+    left: 322px;
+    width: 113px;
+    height: 106px;
   }
 }
