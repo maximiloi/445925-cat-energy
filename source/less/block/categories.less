@@ -1,0 +1,256 @@
+.categories {
+  padding: 0;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.categories__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories__item {
+  background-color: @concrete;
+  min-height: 262px;
+}
+
+.categories__item-text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 4px 35px 22px 20px;
+  border-bottom: 1px solid @alto;
+  margin-bottom: 19px;
+}
+
+.categories__name {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+  padding-left: 91px;
+  padding-top: 25px;
+}
+
+.categories__name--logo-slim {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: " \25CF";
+    font-size: 113px;
+    color: @apple;
+    left: 13px;
+    top: 8px;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: " ";
+    background-image: url("@{images}/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 20px;
+    z-index: 2;
+  }
+}
+
+.categories__name--logo-mass {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: " \25CF";
+    font-size: 113px;
+    color: @apple;
+    left: 13px;
+    top: 8px;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: " ";
+    background-image: url("@{images}/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 67px;
+    height: 67px;
+    left: 13px;
+    top: 33px;
+    z-index: 2;
+  }
+}
+
+.categories__catalog {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: @black;
+  padding-left: 20px;
+  background-image: url("@{images}/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 116px 3px;
+  background-size: 24px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: url("@{images}/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: 116px 3px;
+    background-size: 33px;
+  }
+
+  &:active {
+    //
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .categories {
+    width: 708px;
+  }
+
+  .categories__item {
+    margin-bottom: 33px;
+
+    &:nth-child(2) .categories__item-text {
+      width: 340px;
+    }
+  }
+
+  .categories__name {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 53px;
+    padding-top: 74px;
+  }
+
+  .categories__item-text {
+    width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0;
+    margin-top: 25px;
+    margin-left: 52px;
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .categories__catalog {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin-left: 53px;
+    background-position: 130px 5px;
+    background-size: 26px;
+    padding-bottom: 62px;
+
+    &:hover,
+    &:focus {
+      background-position: 130px 5px;
+    }
+  }
+
+  .categories__name--logo-slim {
+    &::before {
+      font-size: 463px;
+      left: 407px;
+      top: 93px;
+    }
+
+    &::after {
+      width: 193px;
+      height: 193px;
+      left: 476px;
+      top: 78px;
+    }
+  }
+
+  .categories__name--logo-mass {
+    &::before {
+      font-size: 463px;
+      left: 407px;
+      top: 93px;
+    }
+
+    &::after {
+      width: 270px;
+      height: 270px;
+      left: 411px;
+      top: 132px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: 570px;
+    &:nth-child(2) .categories__item-text {
+      width: 445px;
+    }
+  }
+
+  .categories__name {
+    padding-left: 214px;
+    padding-top: 76px;
+  }
+
+  .categories__name--logo-slim {
+    &::before {
+      font-size: 229px;
+      left: 33px;
+      top: 40px;
+    }
+
+    &::after {
+      width: 70px;
+      height: 97px;
+      left: 66px;
+      top: 41px;
+    }
+  }
+
+  .categories__name--logo-mass {
+    &::before {
+      font-size: 229px;
+      left: 33px;
+      top: 40px;
+    }
+
+    &::after {
+      width: 134px;
+      height: 56px;
+      left: 34px;
+      top: 69px;
+    }
+  }
+
+  .categories__item-text {
+    width: 462px;
+    margin-top: 74px;
+    margin-bottom: 32px;
+  }
+}

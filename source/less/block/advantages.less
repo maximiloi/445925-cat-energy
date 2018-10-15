@@ -1,0 +1,174 @@
+.advantages {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 43px;
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  padding-top: 18px;
+  margin-bottom: 27px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.advantages__text {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.advantages__wrapper {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  background-color: @apple;
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
+  background-size: 53px;
+
+  &--logo-no-gmo {
+    background-image: url("@{images}/advantage-leaf@1x.png");
+  }
+
+  &--logo-only-water {
+    background-image: url("@{images}/advantage-powder@1x.png");
+  }
+
+  &--logo-min-food {
+    background-image: url("@{images}/advantage-dining@1x.png");
+  }
+
+  &--logo-happy-time {
+    background-image: url("@{images}/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 708px;
+    margin-bottom: 0;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: -5px;
+    margin-bottom: 72px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__items {
+    width: 324px;
+    min-height: 230px;
+    align-items: flex-start;
+    margin-bottom: 87px;
+    flex-direction: column;
+  }
+
+  .advantages__text {
+    width: 245px;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__wrapper {
+    width: 80px;
+    height: 80px;
+    background-position: 14px 14px;
+    margin-bottom: 31px;
+    position: relative;
+
+    &--logo-no-gmo::after {
+      position: absolute;
+      left: 117px;
+      top: -40px;
+      content: "1";
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: 400;
+      color: @concrete;
+      z-index: -1;
+    }
+
+    &--logo-only-water::after {
+      position: absolute;
+      left: 111px;
+      top: -40px;
+      content: "2";
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: 400;
+      color: @concrete;
+      z-index: -1;
+    }
+
+    &--logo-min-food::after {
+      position: absolute;
+      left: 113px;
+      top: -40px;
+      content: "3";
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: 400;
+      color: @concrete;
+      z-index: -1;
+    }
+
+    &--logo-happy-time::after {
+      position: absolute;
+      left: 111px;
+      top: -40px;
+      content: "4";
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: 400;
+      color: @concrete;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 1220px;
+  }
+
+  .advantages__items {
+    width: 246px;
+  }
+
+  .advantages__list {
+    flex-wrap: nowrap;
+  }
+}
