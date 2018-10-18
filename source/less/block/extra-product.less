@@ -75,3 +75,23 @@
 .extra-product__item-buy {
   margin-bottom: 17px;
 }
+
+@media (min-width: @tablet-width) {
+  .extra-product__title {
+    margin-top: -74px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 36px;
+
+    &::after {
+      top: 23px;
+    }
+
+    & span {
+      margin-left: 29px;
+      padding-right: 36px;
+      padding-left: 38px;
+    }
+  }
+}
