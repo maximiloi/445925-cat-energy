@@ -450,7 +450,8 @@
     font-size: 36px;
     line-height: 36px;
     padding-right: 57px;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
+    position: relative;
 
     &::after {
       width: 768px;
@@ -459,20 +460,45 @@
     }
 
     & span {
+      background-color: @white;
+      margin-top: 28px;
       margin-left: 27px;
       padding-right: 40px;
       padding-left: 40px;
+      position: relative;
+      z-index: 2;
     }
+  }
+
+  .page-form__contact-title span br {
+    display: none;
   }
 
   .page-form__contact-ul {
     width: 628px;
     margin: 0 auto;
-    margin-bottom: 68px;
+    margin-bottom: 63px;
+
+    & label {
+      margin-right: 20px;
+    }
+
+    & input {
+      font-size: 20px;
+      padding: 14px 50px 17px 20px;
+    }
   }
 
   .page-form__contact-wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
+  }
+
+  .page-form__contact-email {
+    background-position: 97% 50%;
+  }
+
+  .page-form__contact-phone {
+    background-position: 97% 50%;
   }
 
   .page-form__comment-title {
@@ -540,6 +566,14 @@
     margin-bottom: 52px;
     left: 59px;
 
+    &::before {
+      position: absolute;
+      top: -9px;
+      left: -59px;
+      width: 39px;
+      height: 39px;
+    }
+
     &:nth-child(2n) {
       width: 285px;
       margin-left: 30px;
@@ -550,13 +584,14 @@
     margin-left: 70px;
     font-size: 20px;
     line-height: 50px;
-    margin-bottom: 58px;
+    margin-bottom: 73px;
   }
 
   .page-form__required {
+    display: inline;
     position: relative;
-    top: -93px;
-    left: 120px;
+    top: -5px;
+    left: 61px;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
