@@ -172,21 +172,23 @@
     margin-bottom: 18px;
   }
 
-  .example__photo {
+  .example__photo-after {
     font-size: 20px;
     line-height: 20px;
     border-bottom: 1px solid @concrete;
   }
 
-  .example__photo-toogle {
+  .example__photo-toggle {
     width: 231px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    width: 1220px;
+    width: 1300px;
     border-top: none;
+    display: flex;
+    justify-content: space-between;
   }
 
   .example__title {
@@ -212,5 +214,11 @@
     margin-left: 110px;
     top: 31px;
     text-align: justify;
+  }
+
+  .example__photo {
+    width: 677px;
+    margin-top: -20px;
+    margin-right: -11px;
   }
 }

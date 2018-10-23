@@ -97,7 +97,6 @@
     position: relative;
     box-sizing: content-box;
     margin: auto 0;
-    max-width: @tablet-width;
   }
 
   .contacts__map-picture {
@@ -110,5 +109,17 @@
     left: 322px;
     width: 113px;
     height: 106px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__map-picture {
+    width: 1440px;
+    height: 400px;
+  }
+
+  .contacts__map-pin {
+    top: 150px;
+    left: 1022px;
   }
 }
