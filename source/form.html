@@ -42,36 +42,38 @@
       <h1 class="page-form__title">Подбор программы</h1>
       <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="page-form__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="page-form__info">
-          <ul class="page-form__info-ul">
-            <li class="page-form__info-wrapper">
-              <label for="page-form__name">Имя:*</label>
-              <input id="page-form__name" type="text" name="page-form__name" value="" placeholder="Барcик" required>
-            </li>
-            <li class="page-form__info-wrapper"><label for="page-form__weight">Вес (кг):*</label>
-              <input id="page-form__weight" type="text" name="page-form__weight" value="" placeholder="7" required>
-            </li>
-            <li class="page-form__info-wrapper"><label for="page-form__age">Возраст (лет):</label>
-              <input id="page-form__age" type="text" name="page-form__age" value="" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="page-form__target">
-          <ul class="page-form__target-ul">
-            <li class="page-form__target-wrapper">
-              <input id="page-form__target-slim" type="radio" name="page-form__target" value="slim" checked>
-              <label for="page-form__target-slim">Похудение</label>
-            </li>
-            <li class="page-form__target-wrapper">
-              <input id="page-form__target-mass" type="radio" name="page-form__target" value="mass">
-              <label for="page-form__target-mass">Набор массы</label>
-            </li>
-            <li class="page-form__target-wrapper">
-              <input id="page-form__target-advice" type="radio" name="page-form__target" value="">
-              <label for="page-form__target-advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="page-form__wrapper-desktop">
+          <fieldset class="page-form__info">
+            <ul class="page-form__info-ul">
+              <li class="page-form__info-wrapper">
+                <label for="page-form__name">Имя:*</label>
+                <input id="page-form__name" type="text" name="page-form__name" value="" placeholder="Барcик" required>
+              </li>
+              <li class="page-form__info-wrapper"><label for="page-form__weight">Вес (кг):*</label>
+                <input id="page-form__weight" type="text" name="page-form__weight" value="" placeholder="7" required>
+              </li>
+              <li class="page-form__info-wrapper"><label for="page-form__age">Возраст (лет):</label>
+                <input id="page-form__age" type="text" name="page-form__age" value="" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="page-form__target">
+            <ul class="page-form__target-ul">
+              <li class="page-form__target-wrapper">
+                <input id="page-form__target-slim" type="radio" name="page-form__target" value="slim" checked>
+                <label for="page-form__target-slim">Похудение</label>
+              </li>
+              <li class="page-form__target-wrapper">
+                <input id="page-form__target-mass" type="radio" name="page-form__target" value="mass">
+                <label for="page-form__target-mass">Набор массы</label>
+              </li>
+              <li class="page-form__target-wrapper">
+                <input id="page-form__target-advice" type="radio" name="page-form__target" value="">
+                <label for="page-form__target-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="page-form__contact">
           <legend class="page-form__contact-title"><span>Контактные данные<br> (владельца кота)</span></legend>
           <ul class="page-form__contact-ul">
