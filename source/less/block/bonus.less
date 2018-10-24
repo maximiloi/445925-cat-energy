@@ -1,35 +1,57 @@
 .bonus {
-  width: 280px;
-  min-height: 289px;
   margin: 0 auto;
+  margin-top: 39px;
+  margin-bottom: 36px;
+  min-height: 289px;
+  width: 280px;
   border-top: 1px solid @mercury;
-  margin-bottom: 31px;
   background-image: url("@{images}/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin-top: 38px;
 }
 
 .bonus__title {
+  position: relative;
+  bottom: -187px;
   margin: 0 auto;
   padding: 0;
-  font-family: "Arial", sans-serif;
-  color: @white;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
   width: 170px;
+  color: @white;
   text-align: center;
-  bottom: -187px;
-  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
 
   &::before {
     position: absolute;
-    content: " ";
     top: -121px;
     left: 58px;
     width: 55px;
     height: 60px;
-    mask: url("@{images}/icon-gift.svg") no-repeat 50% 50%;
     background-color: @white;
+    content: " ";
+    mask: url("@{images}/icon-gift.svg") no-repeat 50% 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .bonus {
+    margin: 0 0 0 30px;
+    width: 708px;
+    border-top: none;
+    background-image: url("@{images}/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    min-height: 276px;
+  }
+
+  .bonus__title {
+    bottom: -72px;
+    text-align: left;
+    margin-left: 423px;
+
+    &::before {
+      left: -332px;
+      top: -6px;
+    }
   }
 }
