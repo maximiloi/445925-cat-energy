@@ -112,10 +112,12 @@
           <img class="example__photo-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой Борис">
         </picture>
         <div class="example__photo-wrapper">
-          <label class="example-photo-before" for="example-photo-before">Было</label>
-          <button type="button" class="example__photo-toggle--before example__photo-toggle--before-on" id="example-photo-before"></button>
-          <button type="button" class="example__photo-toggle--after" id="example-photo-after"></button>
-          <label class="example-photo-after" for="example-photo-after">Стало</label>
+          <button class="example-photo-before" for="example-photo-before">Было</button>
+          <div class="example__photo-toggle">
+            <div class="example__photo-toggle--before-on"></div>
+            <div class="example__photo-toggle--before-off"></div>
+          </div>
+          <button class="example-photo-after" for="example-photo-after">Стало</button>
         </div>
       </div>
     </section>
