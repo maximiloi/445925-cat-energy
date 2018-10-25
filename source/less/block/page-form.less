@@ -637,25 +637,12 @@
   }
 
   .page-form__contact-title {
-    margin-left: 0;
-    font-size: 36px;
-    line-height: 36px;
-    padding-right: 57px;
-    position: relative;
-
     &::after {
       width: 1440px;
-      top: 51px;
-      left: 0;
     }
 
     & span {
-      background-color: @white;
       margin-left: 67px;
-      padding-right: 40px;
-      padding-left: 40px;
-      position: relative;
-      z-index: 2;
     }
   }
 
@@ -667,5 +654,56 @@
 
   .page-form__contact-wrapper {
     width: 570px;
+  }
+
+  .page-form__contact-email {
+    background-position: 96% 50%;
+  }
+
+  .page-form__contact-phone {
+    background-position: 96% 50%;
+  }
+
+  .page-form__comment-title {
+    margin-top: -17px;
+
+    &::after {
+      width: 1440px;
+    }
+
+    & span {
+      margin-left: 67px;
+    }
+  }
+
+  .page-form__comment-text {
+    width: 1180px;
+    margin-left: 110px;
+  }
+
+  .page-form__extra-title {
+    margin-top: 2px;
+
+    &::after {
+      width: 1440px;
+    }
+
+    & span {
+      margin-left: 67px;
+    }
+  }
+
+  .page-form__extra-ul {
+    width: 1220px;
+    margin-left: 110px;
+  }
+
+  .page-form__extra-wrapper {
+    width: 324px;
+
+    &:nth-child(2n) {
+      width: 324px;
+      margin: 0;
+    }
   }
 }
