@@ -58,12 +58,21 @@
 .page-form__info-ul input {
   flex-grow: 1;
   padding: 12px 5px 12px 14px;
-  border: 1px solid @mercury;
+  border: 1px solid @silver;
+  opacity: 0.5;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    border: 2px solid @tundora;
+  }
 }
 
 .page-form__info-ul label {

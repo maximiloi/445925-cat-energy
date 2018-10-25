@@ -99,8 +99,36 @@
   text-align: center;
 }
 
-.example__photo-toogle {
-  width: 53px;
+.example-photo-before {
+  padding-right: 12px;
+}
+
+.example-photo-after {
+  padding-left: 12px;
+}
+
+.example__photo-toggle--before {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  top: -6px;
+  border-radius: 6px;
+  border: 1px solid @silver;
+  background-color: @white;
+  z-index: 1;
+
+  &::after {
+    position: relative;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: @apple;
+    z-index: 2;
+  }
+}
+
+.example__photo-toggle--after {
+  display: none;
 }
 
 .example__photo-after {
