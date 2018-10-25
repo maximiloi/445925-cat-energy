@@ -1,54 +1,54 @@
 .page-form__title {
-  width: 280px;
   margin: 0 auto;
-  padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: none;
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 400;
   margin-top: 15px;
   margin-bottom: 25px;
+  padding: 0;
+  width: 280px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 60px;
 }
 
 .page-form__text {
-  width: 270px;
   margin: 0;
-  padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
   margin-bottom: 39px;
   margin-left: 20px;
+  padding: 0;
+  width: 270px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
 }
 
 .page-form {
   margin: 0 auto;
   padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
   font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
 }
 
 .page-form__info-ul {
-  width: 280px;
   margin: 0;
-  padding: 0;
-  margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 25px;
+  margin-left: 20px;
+  padding: 0;
+  width: 280px;
 }
 
 .page-form__info-wrapper {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
 
   &:nth-child(3) label {
     min-width: 94px;
@@ -56,14 +56,14 @@
 }
 
 .page-form__info-ul input {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
   flex-grow: 1;
-  border: 1px solid @mercury;
   padding: 12px 5px 12px 14px;
+  border: 1px solid @mercury;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
 }
 
 .page-form__info-ul label {
@@ -77,16 +77,16 @@
 .page-form__target-ul {
   display: flex;
   flex-direction: column;
-  list-style: none;
   margin: 0;
   padding: 0;
   border: 1px solid @mercury;
+  list-style: none;
 }
 
 .page-form__target-wrapper {
+  position: relative;
   margin-top: 25px;
   margin-left: 49px;
-  position: relative;
   cursor: pointer;
 
   &:last-child {
@@ -100,11 +100,11 @@
 
 .page-form__target-wrapper::after,
 .page-form__target-wrapper::before {
-  content: "";
   position: absolute;
   top: -5px;
   left: -31px;
   border-radius: 50%;
+  content: "";
 }
 
 .page-form__target-wrapper::before {
@@ -114,14 +114,14 @@
 }
 
 .page-form__target-wrapper::after {
-  width: 12px;
-  height: 12px;
   top: 4px;
   left: -21px;
+  width: 12px;
+  height: 12px;
   background-color: @apple;
-  transform: scale(0);
-  transition-property: transform;
   transition-duration: 0.3s;
+  transition-property: transform;
+  transform: scale(0);
 }
 
 .page-form__target-wrapper input[type="radio"] {
@@ -133,48 +133,48 @@
 }
 
 .page-form__contact-title {
-  display: block;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: none;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
   position: relative;
+  display: block;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 24px;
 
   & span {
-    display: block;
-    padding-left: 17px;
     position: relative;
     z-index: 2;
+    display: block;
     margin-bottom: 32px;
+    padding-left: 17px;
   }
 
   &::after {
     position: absolute;
-    content: " ";
+    top: 14px;
+    right: -118px;
+    z-index: 1;
     width: 99px;
     height: 3px;
     background-color: @apple;
-    right: -118px;
-    top: 14px;
-    z-index: 1;
+    content: " ";
   }
 }
 
 .page-form__contact-wrapper {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 14px;
   display: flex;
   align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
 }
 
 .page-form__contact-ul {
   margin: 0;
-  padding: 0;
-  margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 28px;
+  margin-left: 20px;
+  padding: 0;
 }
 
 .page-form__contact-ul label {
@@ -182,14 +182,14 @@
 }
 
 .page-form__contact-ul input {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
   flex-grow: 1;
-  border: 1px solid @mercury;
   padding: 13px 5px 13px 14px;
+  border: 1px solid @mercury;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
 }
 
 .page-form__contact-email {
@@ -204,92 +204,92 @@
 }
 
 .page-form__comment-title {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: none;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  margin-left: 20px;
-  margin-bottom: 36px;
   position: relative;
+  margin-bottom: 36px;
+  margin-left: 20px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 24px;
 
   span {
-    margin-left: -3px;
-    background-color: @white;
     position: relative;
     z-index: 2;
+    margin-left: -3px;
+    background-color: @white;
   }
 
   &::after {
     position: absolute;
-    content: " ";
+    top: 14px;
+    right: -179px;
+    z-index: 1;
     width: 158px;
     height: 3px;
     background-color: @apple;
-    right: -179px;
-    top: 14px;
-    z-index: 1;
+    content: " ";
   }
 }
 
 .page-form__comment-text {
   margin: 0;
-  border: 1px solid @mercury;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  width: 251px;
-  margin-left: 20px;
-  min-height: 127px;
   margin-bottom: 28px;
+  margin-left: 20px;
   padding: 10px 15px;
+  min-height: 127px;
+  width: 251px;
+  border: 1px solid @mercury;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
 }
 
 .page-form__extra-title {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: none;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  margin-left: 20px;
-  margin-bottom: 39px;
   position: relative;
+  margin-bottom: 39px;
+  margin-left: 20px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 24px;
 
   span {
-    margin-left: -3px;
-    background-color: @white;
     position: relative;
     z-index: 2;
+    margin-left: -3px;
+    background-color: @white;
   }
 
   &::after {
     position: absolute;
-    content: " ";
+    top: 14px;
+    right: -158px;
+    z-index: 1;
     width: 136px;
     height: 3px;
     background-color: @apple;
-    right: -158px;
-    top: 14px;
-    z-index: 1;
+    content: " ";
   }
 }
 
 .page-form__extra-ul {
   display: flex;
   flex-direction: column;
-  list-style: none;
   margin: 0;
-  padding: 0;
-  margin-left: 37px;
   margin-bottom: 19px;
+  margin-left: 37px;
+  padding: 0;
+  list-style: none;
 }
 
 .page-form__extra-wrapper {
+  position: relative;
   margin-bottom: 24px;
   margin-left: 29px;
-  position: relative;
   cursor: pointer;
 
   &::before {
@@ -299,8 +299,8 @@
     z-index: 1;
     width: 29px;
     height: 29px;
-    content: " ";
     border: 1px solid @silver;
+    content: " ";
     transition: all 0.3s ease-in-out;
   }
 }
@@ -319,22 +319,22 @@
 }
 
 .page-form__button {
+  margin-bottom: 20px;
+  margin-left: 20px;
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
-  margin-left: 20px;
-  margin-bottom: 20px;
 }
 
 .page-form__required {
   margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-  text-transform: none;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  text-align: center;
   margin-bottom: 33px;
+  padding: 0;
+  text-align: center;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -344,23 +344,23 @@
   }
 
   .page-form__title {
-    width: 710px;
-    font-size: 60px;
     margin-top: 26px;
     margin-bottom: 56px;
+    width: 710px;
+    font-size: 60px;
   }
 
   .page-form__text {
+    margin-bottom: 64px;
+    margin-left: 70px;
     width: 385px;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 70px;
-    margin-bottom: 64px;
   }
 
   .page-form__form {
-    width: 768px;
     margin: 0 auto;
+    width: 768px;
   }
 
   .page-form__info {
@@ -368,8 +368,8 @@
   }
 
   .page-form__info-ul {
-    width: 630px;
     margin: 0 auto;
+    width: 630px;
   }
 
   .page-form__info-ul label {
@@ -377,10 +377,10 @@
   }
 
   .page-form__info-ul input {
+    padding: 17px 20px;
+    color: @tundora;
     font-size: 20px;
     line-height: 20px;
-    color: @tundora;
-    padding: 17px 20px;
   }
 
   .page-form__info-wrapper {
@@ -403,11 +403,11 @@
 
   .page-form__target-wrapper::after,
   .page-form__target-wrapper::before {
-    content: "";
     position: absolute;
     top: -11px;
     left: -21px;
     border-radius: 50%;
+    content: "";
   }
 
   .page-form__target-wrapper::before {
@@ -417,14 +417,14 @@
   }
 
   .page-form__target-wrapper::after {
-    width: 18px;
-    height: 18px;
     top: 2px;
     left: -11px;
+    width: 18px;
+    height: 18px;
     background-color: @apple;
-    transform: scale(0);
-    transition-property: transform;
     transition-duration: 0.3s;
+    transition-property: transform;
+    transform: scale(0);
   }
 
   .page-form__target-wrapper input[type="radio"] {
@@ -441,32 +441,32 @@
   }
 
   .page-form__target-ul {
-    width: 628px;
     margin: 0 auto;
+    width: 628px;
   }
 
   .page-form__contact-title {
+    position: relative;
+    margin-bottom: 45px;
     margin-left: 0;
+    padding-right: 57px;
     font-size: 36px;
     line-height: 36px;
-    padding-right: 57px;
-    margin-bottom: 45px;
-    position: relative;
 
     &::after {
-      width: 768px;
       top: 51px;
       left: 0;
+      width: 768px;
     }
 
     & span {
-      background-color: @white;
+      position: relative;
+      z-index: 2;
       margin-top: 28px;
       margin-left: 27px;
       padding-right: 40px;
       padding-left: 40px;
-      position: relative;
-      z-index: 2;
+      background-color: @white;
     }
   }
 
@@ -475,17 +475,17 @@
   }
 
   .page-form__contact-ul {
-    width: 628px;
     margin: 0 auto;
     margin-bottom: 63px;
+    width: 628px;
 
     & label {
       margin-right: 20px;
     }
 
     & input {
-      font-size: 20px;
       padding: 14px 50px 17px 20px;
+      font-size: 20px;
     }
   }
 
@@ -502,16 +502,16 @@
   }
 
   .page-form__comment-title {
+    margin-bottom: 77px;
     margin-left: 0;
+    padding-right: 57px;
     font-size: 36px;
     line-height: 36px;
-    padding-right: 57px;
-    margin-bottom: 77px;
 
     &::after {
-      width: 768px;
       top: 23px;
       left: 0;
+      width: 768px;
     }
 
     & span {
@@ -522,26 +522,26 @@
   }
 
   .page-form__comment-text {
-    width: 593px;
-    min-height: 152px;
+    margin-bottom: 64px;
     margin-left: 70px;
+    padding: 10px 18px;
+    min-height: 152px;
+    width: 593px;
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 18px;
-    margin-bottom: 64px;
   }
 
   .page-form__extra-title {
+    margin-bottom: 67px;
     margin-left: 0;
+    padding-right: 57px;
     font-size: 36px;
     line-height: 36px;
-    padding-right: 57px;
-    margin-bottom: 67px;
 
     &::after {
-      width: 768px;
       top: 23px;
       left: 0;
+      width: 768px;
     }
 
     & span {
@@ -552,19 +552,19 @@
   }
 
   .page-form__extra-ul {
-    flex-wrap: wrap;
     flex-direction: row;
-    width: 630px;
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 13px;
+    width: 630px;
   }
 
   .page-form__extra-wrapper {
+    left: 59px;
     margin: 0;
+    margin-bottom: 52px;
     padding: 0;
     width: 315px;
-    margin-bottom: 52px;
-    left: 59px;
 
     &::before {
       position: absolute;
@@ -575,33 +575,33 @@
     }
 
     &:nth-child(2n) {
-      width: 285px;
       margin-left: 30px;
+      width: 285px;
     }
   }
 
   .page-form__button {
+    margin-bottom: 73px;
     margin-left: 70px;
     font-size: 20px;
     line-height: 50px;
-    margin-bottom: 73px;
   }
 
   .page-form__required {
-    display: inline;
     position: relative;
     top: -5px;
     left: 61px;
-    font-size: 16px;
+    display: inline;
     font-weight: 400;
+    font-size: 16px;
     line-height: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-form__title {
-    width: 1220px;
     margin-top: 44px;
+    width: 1220px;
   }
 
   .page-form__text {
@@ -613,23 +613,23 @@
   }
 
   .page-form__wrapper-desktop {
-    width: 1220px;
-    margin-left: 110px;
     display: flex;
     justify-content: space-between;
     margin-bottom: -33px;
+    margin-left: 110px;
+    width: 1220px;
   }
 
   .page-form__info-ul {
-    max-width: 570px;
     margin: 0;
     padding: 0;
+    max-width: 570px;
   }
 
   .page-form__target-ul {
-    max-width: 570px;
     margin: 0;
     padding: 0;
+    max-width: 570px;
   }
 
   .page-form__contact {
@@ -647,9 +647,9 @@
   }
 
   .page-form__contact-ul {
-    width: 1220px;
     display: flex;
     justify-content: space-between;
+    width: 1220px;
   }
 
   .page-form__contact-wrapper {
@@ -677,8 +677,8 @@
   }
 
   .page-form__comment-text {
-    width: 1180px;
     margin-left: 110px;
+    width: 1180px;
   }
 
   .page-form__extra-title {
@@ -694,24 +694,24 @@
   }
 
   .page-form__extra-ul {
-    width: 1220px;
-    margin-left: 110px;
-    margin-bottom: 73px;
     justify-content: space-between;
+    margin-bottom: 73px;
+    margin-left: 110px;
+    width: 1220px;
   }
 
   .page-form__extra-wrapper {
-    width: 245px;
+    left: 0;
     margin: 0;
     margin-right: 80px;
     padding: 0;
-    left: 0;
+    width: 245px;
 
     &:nth-child(2n) {
-      width: 245px;
       margin: 0;
       margin-right: 80px;
       padding: 0;
+      width: 245px;
     }
 
     &:last-child {
@@ -723,15 +723,15 @@
     }
 
     &::before {
+      left: 0;
       margin: 0;
       padding: 0;
-      left: 0;
     }
   }
 
   .page-form__button {
-    margin-left: 110px;
     margin-bottom: 61px;
+    margin-left: 110px;
     width: 572px;
   }
 
