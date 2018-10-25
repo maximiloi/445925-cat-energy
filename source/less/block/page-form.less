@@ -696,14 +696,46 @@
   .page-form__extra-ul {
     width: 1220px;
     margin-left: 110px;
+    margin-bottom: 73px;
+    justify-content: space-between;
   }
 
   .page-form__extra-wrapper {
-    width: 324px;
+    width: 245px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 0;
+    left: 0;
 
     &:nth-child(2n) {
-      width: 324px;
+      width: 245px;
       margin: 0;
+      margin-right: 80px;
+      padding: 0;
     }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & label {
+      margin-left: 58px;
+    }
+
+    &::before {
+      margin: 0;
+      padding: 0;
+      left: 0;
+    }
+  }
+
+  .page-form__button {
+    margin-left: 110px;
+    margin-bottom: 61px;
+    width: 572px;
+  }
+
+  .page-form__required {
+    left: 74px;
   }
 }
