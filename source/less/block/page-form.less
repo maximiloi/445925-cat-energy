@@ -107,8 +107,8 @@
   }
 }
 
-.page-form__target-wrapper::after,
-.page-form__target-wrapper::before {
+.page-form__target-wrapper label::after,
+.page-form__target-wrapper label::before {
   position: absolute;
   top: -5px;
   left: -31px;
@@ -116,13 +116,13 @@
   content: "";
 }
 
-.page-form__target-wrapper::before {
+.page-form__target-wrapper label::before {
   width: 29px;
   height: 29px;
   border: 1px solid @silver;
 }
 
-.page-form__target-wrapper::after {
+.page-form__target-wrapper label::after {
   top: 4px;
   left: -21px;
   width: 12px;
@@ -296,14 +296,17 @@
 }
 
 .page-form__extra-wrapper {
-  position: relative;
   margin-bottom: 24px;
   margin-left: 29px;
+}
+
+.page-form__extra-wrapper label {
+  position: relative;
   cursor: pointer;
 
   &::before {
     position: absolute;
-    top: -4px;
+    top: -2px;
     left: -47px;
     z-index: 1;
     width: 29px;
@@ -312,19 +315,29 @@
     content: " ";
     transition: all 0.3s ease-in-out;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -41px;
+    top: 6px;
+    width: 21px;
+    height: 16px;
+    background-image: url("@{images}/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .page-form__extra-wrapper input[type="checkbox"] {
   display: none;
 }
 
-.page-form__extra-wrapper input[type="checkbox"]:checked ~ label::before {
-  width: 21px;
-  height: 10px;
-  border-color: #00bad2;
-  border-top-style: none;
-  border-right-style: none;
-  transform: rotate(-45deg);
+.page-form__extra-wrapper input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+.page-form__extra-wrapper input[type="checkbox"]:checked + label:after {
+  opacity: 1;
 }
 
 .page-form__button {
@@ -410,24 +423,24 @@
     }
   }
 
-  .page-form__target-wrapper::after,
-  .page-form__target-wrapper::before {
+  .page-form__target-wrapper label::after,
+  .page-form__target-wrapper label::before {
     position: absolute;
-    top: -11px;
-    left: -21px;
+    top: -10px;
+    left: -22px;
     border-radius: 50%;
     content: "";
   }
 
-  .page-form__target-wrapper::before {
+  .page-form__target-wrapper label::before {
     width: 40px;
     height: 40px;
     border: 1px solid @silver;
   }
 
-  .page-form__target-wrapper::after {
+  .page-form__target-wrapper label::after {
     top: 2px;
-    left: -11px;
+    left: -10px;
     width: 18px;
     height: 18px;
     background-color: @apple;
