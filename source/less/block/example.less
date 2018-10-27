@@ -149,7 +149,7 @@
   .example {
     position: relative;
     margin-top: -31px;
-    margin-bottom: 36px;
+    margin-bottom: 1px;
     width: 768px;
     border-top: 1px solid @concrete;
     background-color: @white;
@@ -205,6 +205,11 @@
     line-height: 30px;
   }
 
+  .example__photo {
+    height: 629px;
+    background-image: linear-gradient(to bottom, @white 167px, transparent 167px), linear-gradient(to right, @concrete 50%,@gallery 50%,);
+  }
+
   .example__photo-before {
     margin-bottom: 18px;
     margin-left: 46px;
@@ -216,17 +221,48 @@
     line-height: 20px;
   }
 
+  .example__photo-wrapper {
+    width: 569px;
+    margin-left: 99px;
+  }
+
+  .example__photo-button {
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted rgba(0,0,0, 0.23);
+    padding-bottom: 4px;
+  }
+
   .example__photo-toggle {
-    width: 231px;
+    width: 428px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: @alto;
+    border: none;
+    top: 6px;
+  }
+
+  .example__photo-switch {
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 13px solid @white;
+    border-radius: 50%;
+    background-color: @apple;
+    top: -14px;
+    left: 199px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
     display: flex;
-    justify-content: space-between;
-    width: 1300px;
+    width: 100%;
+    max-width: 1440px;
+    height: 630px;
+    margin-bottom: -30px;
     border-top: none;
+    background-image: linear-gradient(to bottom, @white 162px, transparent 162px), linear-gradient(to right, @concrete 50%,@gallery 50%,);
   }
 
   .example__title {
@@ -252,11 +288,28 @@
     margin-left: 110px;
     width: 327px;
     text-align: justify;
+
+    & span {
+      margin-left: 59px;
+    }
+  }
+
+  .example__text-cell-bottom {
+    background-color: @concrete;
   }
 
   .example__photo {
-    margin-top: -20px;
-    margin-right: -11px;
+    margin-left: 93px;
     width: 677px;
+    background-image: linear-gradient(to bottom, @white 162px, transparent 162px), linear-gradient(to right, @concrete 60.5%,@gallery 39.5%,);
+  }
+
+  .example__photo-before {
+    margin-top: -21px;
+  }
+
+  .example__photo-wrapper {
+    margin-top: 21px;
+    margin-left: 126px;
   }
 }

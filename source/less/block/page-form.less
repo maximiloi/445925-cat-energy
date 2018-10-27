@@ -46,6 +46,7 @@
 .page-form__info-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -56,6 +57,7 @@
 }
 
 .page-form__info-ul input {
+  min-width: 172px;
   flex-grow: 1;
   padding: 12px 5px 12px 14px;
   border: 1px solid @silver;
@@ -68,10 +70,6 @@
 
   &:hover {
     opacity: 1;
-  }
-
-  &:focus {
-    border: 2px solid @tundora;
   }
 }
 
@@ -395,18 +393,19 @@
   }
 
   .page-form__info-ul label {
-    margin-right: 15px;
+    margin-right: 16px;
   }
 
   .page-form__info-ul input {
-    padding: 17px 20px;
+    padding: 15px 20px;
     color: @tundora;
     font-size: 20px;
     line-height: 20px;
   }
 
   .page-form__info-wrapper {
-    margin-bottom: 16px;
+    margin-top: 1px;
+    margin-bottom: 20px;
     margin-left: 2px;
   }
 
@@ -631,7 +630,8 @@
   }
 
   .page-form__form {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;;
   }
 
   .page-form__wrapper-desktop {
@@ -655,12 +655,14 @@
   }
 
   .page-form__contact {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;;
   }
 
   .page-form__contact-title {
     &::after {
-      width: 1440px;
+      width: 100%;
+      max-width: 1440px;;
     }
 
     & span {
@@ -690,7 +692,8 @@
     margin-top: -17px;
 
     &::after {
-      width: 1440px;
+      width: 100%;
+      max-width: 1440px;
     }
 
     & span {
@@ -707,7 +710,8 @@
     margin-top: 2px;
 
     &::after {
-      width: 1440px;
+      width: 100%;
+      max-width: 1440px;
     }
 
     & span {
