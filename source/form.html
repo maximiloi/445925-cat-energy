@@ -30,7 +30,7 @@
             <a href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item--active">Подбор Программы</a>
+            <a class="site-list__link site-list__link--active">Подбор Программы</a>
           </li>
         </ul>
       </div>
@@ -42,36 +42,38 @@
       <h1 class="page-form__title">Подбор программы</h1>
       <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="page-form__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="page-form__info">
-          <ul class="page-form__info-ul">
-            <li class="page-form__info-wrapper">
-              <label for="page-form__name">Имя:*</label>
-              <input id="page-form__name" type="text" name="page-form__name" value="" placeholder="Барcик" required>
-            </li>
-            <li class="page-form__info-wrapper"><label for="page-form__weight">Вес (кг):*</label>
-              <input id="page-form__weight" type="text" name="page-form__weight" value="" placeholder="7" required>
-            </li>
-            <li class="page-form__info-wrapper"><label for="page-form__age">Возраст (лет):</label>
-              <input id="page-form__age" type="text" name="page-form__age" value="" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="page-form__target">
-          <ul class="page-form__target-ul">
-            <li class="page-form__target-wrapper">
-              <input id="page-form__target-slim" type="radio" name="page-form__target" value="slim" checked>
-              <label for="page-form__target-slim">Похудение</label>
-            </li>
-            <li class="page-form__target-wrapper">
-              <input id="page-form__target-mass" type="radio" name="page-form__target" value="mass">
-              <label for="page-form__target-mass">Набор массы</label>
-            </li>
-            <li class="page-form__target-wrapper">
-              <input id="page-form__target-advice" type="radio" name="page-form__target" value="">
-              <label for="page-form__target-advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="page-form__wrapper-desktop">
+          <fieldset class="page-form__info">
+            <ul class="page-form__info-ul">
+              <li class="page-form__info-wrapper">
+                <label for="page-form__name">Имя:*</label>
+                <input id="page-form__name" type="text" name="page-form__name" value="" placeholder="Барcик" required>
+              </li>
+              <li class="page-form__info-wrapper"><label for="page-form__weight">Вес (кг):*</label>
+                <input id="page-form__weight" type="text" name="page-form__weight" value="" placeholder="7" required>
+              </li>
+              <li class="page-form__info-wrapper"><label for="page-form__age">Возраст&nbsp;(лет):</label>
+                <input id="page-form__age" type="text" name="page-form__age" value="" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="page-form__target">
+            <ul class="page-form__target-ul">
+              <li class="page-form__target-wrapper">
+                <input id="page-form__target-slim" type="radio" name="page-form__target" value="slim" checked>
+                <label for="page-form__target-slim">Похудение</label>
+              </li>
+              <li class="page-form__target-wrapper">
+                <input id="page-form__target-mass" type="radio" name="page-form__target" value="mass">
+                <label for="page-form__target-mass">Набор массы</label>
+              </li>
+              <li class="page-form__target-wrapper">
+                <input id="page-form__target-advice" type="radio" name="page-form__target" value="">
+                <label for="page-form__target-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="page-form__contact">
           <legend class="page-form__contact-title"><span>Контактные данные<br> (владельца кота)</span></legend>
           <ul class="page-form__contact-ul">
@@ -93,7 +95,7 @@
           <legend class="page-form__extra-title"><span>Дополнительно</span></legend>
           <ul class="page-form__extra-ul">
             <li class="page-form__extra-wrapper">
-              <input id="page-form__extra-sweetener" type="checkbox" name="form__extra__sweetener" value="">
+              <input id="page-form__extra-sweetener" type="checkbox" name="form__extra__sweetener" value="" checked>
               <label for="page-form__extra-sweetener">Сахарозаменитель</label>
             </li>
             <li class="page-form__extra-wrapper">
@@ -117,18 +119,20 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__contacts  contacts contacts--grey">
-      <p class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="page-footer__contacts-map">
+      <div class="contacts contacts--grey">
+        <p class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span> Санкт-Петербург</span></p>
+      </div>
+      <div class="map">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="карта">
+        </picture>
+        <div class="map__pin">Место на карте</div>
+      </div>
     </section>
-    <div class="contacts__map">
-      <picture>
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-        <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
-      </picture>
-      <div class="contacts__map-pin">Место на карте</div>
-    </div>
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a>

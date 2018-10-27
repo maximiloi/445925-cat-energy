@@ -27,7 +27,7 @@
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item--active">Каталог Продукции</a>
+            <a class="site-list__link site-list__link--active">Каталог Продукции</a>
           </li>
           <li class="site-list__item">
             <a href="form.html">Подбор Программы</a>
@@ -311,18 +311,20 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts contacts--grey">
-      <p class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="page-footer__contacts-map">
+      <div class="contacts contacts--grey">
+        <p class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span> Санкт-Петербург</span></p>
+      </div>
+      <div class="map">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="карта">
+        </picture>
+        <div class="map__pin">Место на карте</div>
+      </div>
     </section>
-    <div class="contacts__map">
-      <picture>
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-        <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
-      </picture>
-      <div class="contacts__map-pin">Место на карте</div>
-    </div>
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a>

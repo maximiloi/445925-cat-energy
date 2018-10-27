@@ -1,38 +1,33 @@
 .main-nav {
   position: relative;
-  width: 320px;
   margin: 0 auto;
+  width: 320px;
 }
 
 .main-nav__toggle {
   position: absolute;
-  margin: 0;
-  padding: 0;
   top: -42px;
   right: 20px;
   z-index: 2;
-  background-color: @white;
-
   display: block;
+  margin: 0;
+  padding: 0;
   width: 24px;
   height: 24px;
-
-  cursor: pointer;
   border: none;
+  background-color: @white;
+  cursor: pointer;
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: "";
-
   position: absolute;
   top: 0;
   left: 0;
-
   width: 24px;
   height: 2px;
-
   background-color: @black;
   box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
+  content: "";
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -41,7 +36,6 @@
 
   &::before,
   &::after {
-    content: "";
 
     position: absolute;
     top: 10px;
@@ -51,11 +45,12 @@
     height: 2px;
 
     background-color: @black;
+    content: "";
   }
 
   &::before {
-    transform: rotate(45deg);
     box-shadow: none;
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -85,15 +80,15 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: auto;
     margin: 0;
+    width: auto;
   }
 
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
     margin: 0 auto;
+    width: 640px;
   }
 
   .main-nav__toggle {
