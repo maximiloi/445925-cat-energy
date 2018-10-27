@@ -5,42 +5,42 @@
 .product__title {
   margin: 0;
   padding: 0;
+  padding-top: 15px;
+  padding-bottom: 29px;
+  padding-left: 20px;
+  border-bottom: 1px solid @mercury;
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
-  font-weight: 400;
-  padding-top: 15px;
-  border-bottom: 1px solid @mercury;
-  padding-left: 20px;
-  padding-bottom: 29px;
 }
 
 .product__list {
-  list-style: none;
   margin: 0;
-  padding: 0;
   margin-bottom: -2px;
+  padding: 0;
+  list-style: none;
 }
 
 .product__item {
   display: flex;
   flex-direction: column;
+  padding-bottom: 24px;
   padding-left: 20px;
   border-bottom: 1px solid @mercury;
-  padding-bottom: 24px;
 }
 
 .product__item-name {
   display: block;
   margin: 0;
-  padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
   margin-top: 21px;
   margin-bottom: 13px;
+  padding: 0;
   width: 100px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 20px;
 }
 
 .product__item-name a {
@@ -56,12 +56,12 @@
 .product__item-info {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
   width: 100%;
   border-collapse: collapse;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
 }
 
 .product__item-info td {
@@ -82,58 +82,68 @@
 }
 
 .product__more {
-  background-image: url("@{images}/icon-plus-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-position: 50% 18px;
   margin: 10px auto 0;
-  border-bottom: 1px solid @mercury;
   padding-bottom: 24px;
+  border-bottom: 1px solid @mercury;
+  background-image: url("@{images}/icon-plus-mobile.svg");
+  background-position: 50% 18px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
 }
 
 .product__more-title {
   display: block;
   margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  padding-top: 70px;
   margin-bottom: 8px;
+  padding: 0;
+  padding-top: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 20px;
 }
 
 .product__more-text {
   margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  text-align: center;
   margin-bottom: 21px;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
 }
 
 .product__more-button {
-  color: @black;
+  margin-left: 20px;
   background-color: @concrete;
+  color: @black;
+  font-weight: 400;
   font-size: 16px;
   line-height: 40px;
-  font-weight: 400;
-  margin-left: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: @gallery;
+  }
+
+  &:active {
+    color: @black;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .product__title {
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 60px;
+    margin-bottom: 136px;
     padding-top: 26px;
     padding-left: 30px;
     border-bottom: none;
-    margin-bottom: 136px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .product__list {
@@ -144,18 +154,18 @@
   }
 
   .product__item {
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 0;
-    border-bottom: none;
+    padding-right: 30px;
     padding-bottom: 98px;
+    padding-left: 30px;
+    border-bottom: none;
   }
 
   .product__tablet {
+    position: relative;
+    justify-content: center;
     width: 324px;
     background-color: @concrete;
-    justify-content: center;
-    position: relative;
   }
 
   .product__item-image {
@@ -164,25 +174,25 @@
   }
 
   .product__wrapper {
-    width: 324px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 324px;
   }
 
   .product__item-name {
-    font-size: 20px;
-    text-align: center;
-    width: 130px;
     margin-top: 164px;
     margin-bottom: 23px;
+    width: 130px;
+    text-align: center;
+    font-size: 20px;
   }
 
   .product__item-info {
+    margin-bottom: 110px;
+    width: 250px;
     font-size: 16px;
     line-height: 23px;
-    width: 250px;
-    margin-bottom: 110px;
   }
 
   .product__item-info tr {
@@ -195,41 +205,93 @@
 
   .product__item-buy {
     position: relative;
+    bottom: 82px;
     margin-left: 38px;
     width: 248px;
-    bottom: 82px;
   }
 
   .product__more {
+    margin: 0 30px;
+    padding: 0;
     width: 322px;
     height: 430px;
-    padding: 0;
-    margin: 0 30px;
     border: 1px solid @alto;
     background-image: url("@{images}/icon-plus.svg");
-    background-repeat: no-repeat;
-    background-size: 60px 60px;
     background-position: 50% 54px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
   }
 
   .product__more-title {
-    padding-top: 163px;
-    font-size: 20px;
-    width: 140px;
     margin: 0 auto;
     margin-bottom: 26px;
+    padding-top: 163px;
+    width: 140px;
+    font-size: 20px;
   }
 
   .product__more-text {
-    font-size: 16px;
-    line-height: 18px;
-    width: 170px;
     margin: 0 auto;
     margin-bottom: 86px;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .product__more-button {
-    width: 250px;
     margin-left: 37px;
+    width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__title {
+    margin-top: 44px;
+    margin-bottom: 164px;
+    margin-left: 110px;
+    padding: 0;
+  }
+
+  .product__list {
+    margin-left: 110px;
+    width: 1220px;
+  }
+
+  .product__item {
+    margin: 0;
+    margin-right: 80px;
+    margin-bottom: 100px;
+    padding: 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .product__tablet {
+    width: 245px;
+  }
+
+  .product__item-image {
+    bottom: 305px;
+    left: 1px;
+  }
+
+  .product__item-info {
+    width: 169px;
+  }
+
+  .product__item-buy {
+    width: 169px;
+  }
+
+  .product__more {
+    margin: 0;
+    padding: 0;
+    width: 243px;
+  }
+
+  .product__more-button {
+    width: 169px;
   }
 }
