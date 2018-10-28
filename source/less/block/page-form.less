@@ -57,7 +57,6 @@
 }
 
 .page-form__info-ul input {
-  min-width: 172px;
   flex-grow: 1;
   padding: 12px 5px 12px 14px;
   border: 1px solid @silver;
@@ -197,6 +196,20 @@
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
+}
+
+.page-form__contact-icon--email {
+  position: relative;
+  margin-right: -18px;
+  left: -35px;
+  fill: @mine-shaft;
+}
+
+.page-form__contact-icon--phone {
+  position: relative;
+  margin-right: -21px;
+  left: -34px;
+  fill: @mine-shaft;
 }
 
 .page-form__contact-email {
@@ -512,6 +525,10 @@
 
   .page-form__contact-wrapper {
     margin-bottom: 19px;
+
+    &:nth-child(2) label {
+      margin-right: 13px;
+    }
   }
 
   .page-form__contact-email {
@@ -601,6 +618,22 @@
     }
   }
 
+  .page-form__extra-wrapper label {
+    margin-left: 58px;
+
+    &::before {
+      width: 39px;
+      height: 39px;
+      top: -5px;
+      left: -58px;
+    }
+
+    &::after {
+      top: 7px;
+      left: -47px;
+    }
+  }
+
   .page-form__button {
     margin-bottom: 73px;
     margin-left: 70px;
@@ -661,8 +694,7 @@
 
   .page-form__contact-title {
     &::after {
-      width: 100%;
-      max-width: 1440px;
+      width: 1440px;
     }
 
     & span {
@@ -692,8 +724,7 @@
     margin-top: -17px;
 
     &::after {
-      width: 100%;
-      max-width: 1440px;
+      width: 1440px;
     }
 
     & span {
@@ -710,8 +741,7 @@
     margin-top: 2px;
 
     &::after {
-      width: 100%;
-      max-width: 1440px;
+      width: 1440px;
     }
 
     & span {

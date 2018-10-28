@@ -21,6 +21,19 @@ body {
   font-size: 14px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
+  max-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    max-width: 1440px;
+  }
 }
 
 a {
