@@ -137,7 +137,7 @@
 
 @media (min-width: @tablet-width) {
   .product__title {
-    margin-bottom: 136px;
+    margin-bottom: 55px;
     padding-top: 26px;
     padding-left: 30px;
     border-bottom: none;
@@ -155,44 +155,51 @@
 
   .product__item {
     margin: 0;
-    padding-right: 30px;
-    padding-bottom: 98px;
-    padding-left: 30px;
-    border-bottom: none;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 61px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    align-items: center;
+    background-image: linear-gradient(to top, @concrete 431px, transparent 431px);
+
+    &:last-child li {
+      margin-top: 50px;
+    }
   }
 
   .product__tablet {
-    position: relative;
-    justify-content: center;
-    width: 324px;
-    background-color: @concrete;
+    flex-direction: column;
   }
 
   .product__item-image {
-    position: absolute;
-    bottom: 306px;
+    margin-bottom: 37px;
   }
 
   .product__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 324px;
+    width: 100%;
   }
 
   .product__item-name {
-    margin-top: 164px;
-    margin-bottom: 23px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
     width: 130px;
-    text-align: center;
     font-size: 20px;
+    line-height: 20px;
+    text-align: center;
   }
 
   .product__item-info {
-    margin-bottom: 110px;
-    width: 250px;
+    margin-bottom: 33px;
+    width: 249px;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 16px;
   }
 
   .product__item-info tr {
@@ -200,18 +207,19 @@
   }
 
   .product__item-info td {
+    padding-top: 7px;
     padding-bottom: 8px;
   }
 
   .product__item-buy {
-    position: relative;
-    bottom: 82px;
-    margin-left: 38px;
-    width: 248px;
+    margin-bottom: 40px;
+    width: 249px;
   }
 
   .product__more {
-    margin: 0 30px;
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 30px;
     padding: 0;
     width: 322px;
     height: 430px;
@@ -246,15 +254,11 @@
 
 @media (min-width: @desktop-width) {
   .product__title {
-    margin-top: 44px;
-    margin-bottom: 164px;
-    margin-left: 110px;
-    padding: 0;
+    margin: 0;
   }
 
   .product__list {
-    margin-left: 110px;
-    width: 1220px;
+    padding: 0;
   }
 
   .product__item {
@@ -269,20 +273,19 @@
   }
 
   .product__tablet {
-    width: 245px;
+    margin: 0;
   }
 
   .product__item-image {
-    bottom: 305px;
-    left: 1px;
+    margin: 0;
   }
 
   .product__item-info {
-    width: 169px;
+    margin: 0;
   }
 
   .product__item-buy {
-    width: 169px;
+    margin: 0;
   }
 
   .product__more {
