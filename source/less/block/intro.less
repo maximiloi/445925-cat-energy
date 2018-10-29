@@ -1,8 +1,16 @@
 .intro {
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
+  width: 320px;
+  height: 305px;
   background-image: url("@{images}/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("@{images}/index-background-mobile@2x.jpg");
+  }
 }
 
 .intro__tagline {
