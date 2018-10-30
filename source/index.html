@@ -113,7 +113,7 @@
             <span class="example__text-cell-bottom">затрачено времени</span>
           </p>
         </div>
-        <p class="example__text-total">Затраты на питание: <span>15 000 руб.</span></p>
+        <p class="example__text-total">Затраты на питание: <span>15 000&nbsp;руб.</span></p>
       </div>
       <div class="example__photo">
         <picture>
@@ -153,17 +153,20 @@
         <p class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span> Санкт-Петербург</span></p>
       </div>
-      <div class="map">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="map__picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="360" height="362" alt="карта">
-        </picture>
-        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A189f9e9713023e83face1091e64118b3fea38845af8021a01e43b0b961bab575&amp;source=constructor"></iframe>
+      <div class="map">
+        <div class="map__mock">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш офис">
+          </picture>
+        </div>
+        <!-- <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A189f9e9713023e83face1091e64118b3fea38845af8021a01e43b0b961bab575&amp;source=constructor"></iframe> -->
       </div>
     </div>
 
@@ -179,21 +182,21 @@
           <li class="social__item">
             <a href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
               <svg class="social__link  social__link--vkontakte" width="22" height="12">
-                <use xlink:href="#icon-vk-mobile"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
               <svg class="social__link  social__link--instagram" width="16" height="16">
-                <use xlink:href="#icon-insta-mobile"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
               <svg class="social__link  social__link--facebook" width="10" height="19">
-                <use xlink:href="#icon-fb-mobile"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>

@@ -1,7 +1,5 @@
 .page-footer {
   margin: 0 auto;
-  width: 320px;
-  background-color: @concrete;
 }
 
 .page-footer__copyright {
@@ -31,10 +29,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
-    width: 768px;
-  }
-
   .page-footer__wrapper {
     display: flex;
     align-items: center;
@@ -73,12 +67,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    width: 100%;
-    max-width: 1440px;
-    background-color: @white;
-  }
-
   .page-footer__wrapper {
     width: 100%;
     max-width: 1440px;
@@ -91,5 +79,10 @@
 
   .page-footer__copyright {
     margin-right: 110px;
+  }
+
+  .page-footer__contacts-map {
+    display: flex;
+    align-items: center;
   }
 }
