@@ -1,8 +1,15 @@
 .example {
   margin-bottom: 26px;
+  min-width: 320px;
+  width: 100%;
   background-color: @concrete;
 }
 
+.example__description {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
+}
 .example__title {
   margin: 0;
   padding: 0;
@@ -79,8 +86,10 @@
 }
 
 .example__photo {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 100%;
+  max-width: 320px;
 }
 
 .example__photo-before {
@@ -147,9 +156,12 @@
     position: relative;
     margin-top: -31px;
     margin-bottom: 2px;
-    width: 768px;
     border-top: 1px solid @concrete;
     background-color: @white;
+  }
+
+  .example__description {
+    max-width: 768px;
   }
 
   .example__title {
@@ -203,13 +215,20 @@
   }
 
   .example__photo {
+    margin: 0 auto;
+    max-width: 100%;
     height: 629px;
     background-image: linear-gradient(to bottom, @white 167px, transparent 167px), linear-gradient(to right, @concrete 50%, @gallery 50%);
   }
 
+  .example__photo picture {
+    margin: 0 auto;
+    width: 690px;
+  }
+
   .example__photo-before {
+    margin: 0 auto;
     margin-bottom: 18px;
-    margin-left: 46px;
   }
 
   .example__photo-after {

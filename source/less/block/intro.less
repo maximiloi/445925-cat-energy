@@ -1,12 +1,16 @@
 .intro {
+  margin: 0 auto;
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
-  width: 320px;
+  align-items: center;
+  width: 100%;
+  background-color: #63a73a;
   height: 305px;
   background-image: url("@{images}/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 50% 0;
+  background-size: 320px 305px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("@{images}/index-background-mobile@2x.jpg");
@@ -16,7 +20,6 @@
 .intro__tagline {
   margin: 0;
   margin-top: 27px;
-  margin-left: 35px;
   padding: 0;
   width: 250px;
   color: @white;
@@ -31,7 +34,6 @@
   margin: 0;
   margin-top: 25px;
   margin-bottom: 27px;
-  margin-left: 34px;
   padding: 0;
   width: 250px;
   color: @white;
@@ -45,11 +47,9 @@
 
 .intro__product-photo {
   margin-bottom: 2px;
-  margin-left: 20px;
 }
 
 .intro__link-form {
-  margin-left: 20px;
   font-size: 14px;
   order: 2;
 }
@@ -62,13 +62,13 @@
     width: 100%;
     min-height: 812px;
     background-image: none;
+    background-color: transparent;
   }
 
   .intro__tagline {
     margin: 0;
     margin-bottom: 41px;
-    margin-left: 117px;
-    width: 490px;
+    width: 534px;
     color: @black;
     text-align: left;
     font-size: 60px;
@@ -78,9 +78,8 @@
   .intro__text {
     margin: 0;
     margin-bottom: 48px;
-    margin-left: 117px;
     padding: 0;
-    width: 490px;
+    width: 534px;
     color: @black;
     text-align: left;
     font-size: 20px;
@@ -89,7 +88,7 @@
 
   .intro__link-form {
     margin: 0;
-    margin-left: 120px;
+    margin-left: -289px;
     padding: 0;
     width: 243px;
     min-height: 52px;
@@ -101,7 +100,6 @@
   .intro__product-photo {
     position: relative;
     margin-top: -80px;
-    margin-left: 30px;
     width: 709px;
     height: 609px;
     z-index: -1;
