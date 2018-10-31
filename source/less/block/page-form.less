@@ -12,7 +12,7 @@
 }
 
 .page-form__text {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 39px;
   margin-left: 20px;
   padding: 0;
@@ -40,7 +40,6 @@
   margin-bottom: 25px;
   margin-left: 20px;
   padding: 0;
-  width: 280px;
 }
 
 .page-form__info-wrapper {
@@ -56,7 +55,9 @@
   }
 
   &:nth-child(3) input {
-    max-width: 150px;
+    @media (max-width: 320px) {
+      max-width: 150px;
+    }
   }
 }
 
@@ -144,27 +145,32 @@
 
 .page-form__contact-title {
   position: relative;
-  display: block;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
   text-transform: none;
   font-weight: 400;
   font-size: 24px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 24px;
 
-  & span {
+  span {
+    display: block;
+    width: 181px;
     position: relative;
     z-index: 2;
-    display: block;
-    margin-bottom: 32px;
-    padding-left: 17px;
+    background-color: @white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &::after {
     position: absolute;
     top: 14px;
-    right: -118px;
+    left: 0;
+    right: 0;
     z-index: 1;
-    width: 99px;
+    width: 100%;
     height: 3px;
     background-color: @apple;
     content: " ";
@@ -182,7 +188,7 @@
 .page-form__contact-ul {
   margin: 0;
   margin-right: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   margin-left: 20px;
   padding: 0;
 }
@@ -202,14 +208,14 @@
   line-height: 18px;
 }
 
-.page-form__contact-icon--email {
+.page-form__contact-icon-email {
   position: relative;
   margin-right: -18px;
   left: -35px;
   fill: @mine-shaft;
 }
 
-.page-form__contact-icon--phone {
+.page-form__contact-icon-phone {
   position: relative;
   margin-right: -21px;
   left: -34px;
@@ -229,8 +235,9 @@
 
 .page-form__comment-title {
   position: relative;
-  margin-bottom: 36px;
-  margin-left: 20px;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
   text-transform: none;
   font-weight: 400;
   font-size: 24px;
@@ -240,16 +247,18 @@
   span {
     position: relative;
     z-index: 2;
-    margin-left: -3px;
     background-color: @white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &::after {
     position: absolute;
     top: 14px;
-    right: -179px;
+    left: 0;
+    right: 0;
     z-index: 1;
-    width: 158px;
+    width: 100%;
     height: 3px;
     background-color: @apple;
     content: " ";
@@ -258,7 +267,7 @@
 
 .page-form__comment-text {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   margin-left: 20px;
   padding: 10px 15px;
   min-height: 127px;
@@ -273,8 +282,9 @@
 
 .page-form__extra-title {
   position: relative;
-  margin-bottom: 39px;
-  margin-left: 20px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
   text-transform: none;
   font-weight: 400;
   font-size: 24px;
@@ -284,16 +294,18 @@
   span {
     position: relative;
     z-index: 2;
-    margin-left: -3px;
     background-color: @white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &::after {
     position: absolute;
     top: 14px;
-    right: -158px;
+    left: 0;
+    right: 0;
     z-index: 1;
-    width: 136px;
+    width: 100%;
     height: 3px;
     background-color: @apple;
     content: " ";
@@ -397,7 +409,7 @@
 
   .page-form__form {
     margin: 0 auto;
-    width: 768px;
+    width: 100%;
   }
 
   .page-form__info {
@@ -485,19 +497,22 @@
 
   .page-form__contact-title {
     position: relative;
-    margin-bottom: 45px;
+    margin-top: 28px;
+    margin-bottom: 75px;
     margin-left: 0;
     padding-right: 57px;
     font-size: 36px;
     line-height: 36px;
 
     &::after {
-      top: 51px;
+      top: 22px;
       left: 0;
-      width: 768px;
+      width: 100%;
     }
 
     & span {
+      display: inline;
+      width: 0;
       position: relative;
       z-index: 2;
       margin-top: 28px;
@@ -506,10 +521,6 @@
       padding-left: 40px;
       background-color: @white;
     }
-  }
-
-  .page-form__contact-title span br {
-    display: none;
   }
 
   .page-form__contact-ul {
@@ -553,7 +564,7 @@
     &::after {
       top: 23px;
       left: 0;
-      width: 768px;
+      width: 100%;
     }
 
     & span {
@@ -583,7 +594,7 @@
     &::after {
       top: 23px;
       left: 0;
-      width: 768px;
+      width: 100%;
     }
 
     & span {
@@ -668,7 +679,6 @@
 
   .page-form__form {
     width: 100%;
-    max-width: 1440px;
   }
 
   .page-form__wrapper-desktop {
@@ -693,12 +703,11 @@
 
   .page-form__contact {
     width: 100%;
-    max-width: 1440px;
   }
 
   .page-form__contact-title {
     &::after {
-      width: 1440px;
+      width: 100%;
     }
 
     & span {
@@ -728,7 +737,7 @@
     margin-top: -17px;
 
     &::after {
-      width: 1440px;
+      width: 100%;
     }
 
     & span {
@@ -745,7 +754,7 @@
     margin-top: 2px;
 
     &::after {
-      width: 1440px;
+      width: 100%;
     }
 
     & span {
