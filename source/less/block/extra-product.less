@@ -41,9 +41,7 @@
 }
 
 .extra-product__item-title {
-  margin: 0;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin: 13px 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 400;
@@ -53,8 +51,7 @@
 }
 
 .extra-product__item-info {
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   padding: 0;
   width: 100%;
   border-spacing: 0;
@@ -63,14 +60,8 @@
   font-size: 14px;
   font-family: "Arial", sans-serif;
   line-height: 14px;
-}
-
-.extra-product__item-info td {
-  padding: 0;
-}
-
-.extra-product__item-info td:nth-child(2n) {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .extra-product__item-buy {
@@ -78,9 +69,7 @@
 }
 
 .extra-product__bonus {
-  margin: 0 auto;
-  margin-top: 39px;
-  margin-bottom: 36px;
+  margin: 39px auto 36px;
   width: 280px;
   height: 289px;
   border-top: 1px solid @mercury;
@@ -151,19 +140,10 @@
     }
   }
 
-  .extra-product__item-info td:nth-child(1n) {
-    text-align: right;
-  }
-
-  .extra-product__item-info td:nth-child(2n) {
-    width: 94px;
-  }
-
   .extra-product__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 8px;
+    margin: 0 auto 8px;
     width: 632px;
   }
 
@@ -177,6 +157,12 @@
     width: 226px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  .extra-product__item-info span {
+    width: 94px;
   }
 
   .extra-product__item-buy {
@@ -214,12 +200,12 @@
 
 @media (min-width: @desktop-width) {
   .extra-product__title {
-    margin: 0;
-    margin-top: 12px;
-    margin-bottom: 81px;
+    &::after {
+      width: 100%;
+    }
 
     & span {
-      margin-left: 71px;
+      margin-left: 67px;
     }
   }
 
@@ -228,8 +214,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 1220px;
-    margin: 0 auto;
-    margin-bottom: 88px;
+    margin: 0 auto 88px;
   }
 
   .extra-product__list {
@@ -247,21 +232,16 @@
 
   .extra-product__item-info {
     width: 307px;
+    justify-content: space-between;
   }
 
-  .extra-product__item-info td:nth-child(1n) {
-    width: 242px;
+  .extra-product__item-info span {
+    width: 63px;
     text-align: left;
   }
 
-  .extra-product__item-info td:nth-child(2n) {
-    width: 62px;
-  }
-
   .extra-product__item-buy {
-    margin: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     padding: 0;
     width: 245px;
   }

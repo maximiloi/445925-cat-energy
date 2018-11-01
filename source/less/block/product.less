@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 24px;
-  padding-left: 20px;
   border-bottom: 1px solid @mercury;
 }
 
@@ -120,7 +119,6 @@
 }
 
 .product__more-button {
-  margin-left: 20px;
   background-color: @concrete;
   color: @black;
   font-weight: 400;
@@ -172,7 +170,7 @@
     border: none;
     align-items: center;
     background-image: linear-gradient(to top, @concrete 431px, transparent 431px);
-    min-height: 523px;
+    min-height: 511px;
   }
 
   .product__tablet {
@@ -258,12 +256,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .product {
+    margin-bottom: -14px;
+  }
+
   .product__title {
-    margin: 0;
-    margin-left: 110px;
+    margin: 0 auto;
     margin-top: 43px;
     margin-bottom: 85px;
     padding: 0;
+    width: 100%;
+    max-width: 1220px;
   }
 
   .product__list {
