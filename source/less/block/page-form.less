@@ -72,8 +72,20 @@
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
 
+  &::placeholder {
+    color: @mine-shaft;
+  }
+
   &:hover {
-    opacity: 1;
+    border: 1px solid @mine-shaft;
+  }
+
+  &:focus {
+    border: 1px solid @silver;
+  }
+
+  &:invalid {
+    border: 1px solid @mona-lisa;
   }
 }
 
@@ -122,6 +134,7 @@
   width: 29px;
   height: 29px;
   border: 1px solid @silver;
+  opacity: 0.5;
 }
 
 .page-form__target-wrapper label::after {
@@ -141,6 +154,22 @@
 
 .page-form__target-wrapper input[type="radio"]:checked ~ label::after {
   transform: scale(1);
+}
+
+.page-form__target-wrapper input:active + label {
+  opacity: 0.3;
+}
+
+.page-form__target-wrapper input:hover + label::before {
+  opacity: 1;
+}
+
+.page-form__target-wrapper input:focus + label::before {
+  opacity: 1;
+}
+
+.page-form__target-wrapper input:active + label::before {
+  opacity: 0.3;
 }
 
 .page-form__contact-title {
@@ -206,6 +235,47 @@
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
+
+  &::placeholder {
+    color: @mine-shaft;
+  }
+
+  &:hover {
+    border: 1px solid @mine-shaft;
+  }
+
+  &:focus {
+    border: 1px solid @silver;
+  }
+
+  &:invalid {
+    border: 1px solid @mona-lisa;
+  }
+}
+
+.page-form__contact-ul input:focus + .page-form__contact-icon {
+  opacity: 0.8;
+  fill: @apple;
+}
+
+.page-form__contact-ul input:invalid + .page-form__contact-icon {
+  opacity: 0.8;
+  fill: @mona-lisa;
+}
+
+.page-form__contact-icon {
+  display: block;
+  fill: @mine-shaft;
+
+  &:hover {
+    opacity: 1;
+    fill: @apple;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: @apple;
+  }
 }
 
 .page-form__contact-icon-email {
@@ -265,6 +335,22 @@
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
+
+  &::placeholder {
+    color: @mine-shaft;
+  }
+
+  &:hover {
+    border: 1px solid @mine-shaft;
+  }
+
+  &:focus {
+    border: 1px solid @silver;
+  }
+
+  &:invalid {
+    border: 1px solid @mona-lisa;
+  }
 }
 
 .page-form__extra-title {
@@ -352,6 +438,22 @@
 
 .page-form__extra-wrapper input[type="checkbox"]:checked + label::after {
   opacity: 1;
+}
+
+.page-form__extra-wrapper input:active + label {
+  opacity: 0.3;
+}
+
+.page-form__extra-wrapper input:hover + label::before {
+  opacity: 1;
+}
+
+.page-form__extra-wrapper input:focus + label::before {
+  opacity: 1;
+}
+
+.page-form__extra-wrapper input:active + label::before {
+  opacity: 0.3;
 }
 
 .page-form__button {

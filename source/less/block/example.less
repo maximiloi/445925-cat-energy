@@ -258,9 +258,18 @@
     line-height: 20px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
     padding-bottom: 4px;
+
+    &:hover {
+      border-bottom: 1px solid @mine-shaft;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   .example__photo-toggle {
+    position: relative;
     width: 428px;
     height: 6px;
     border-radius: 3px;
@@ -270,15 +279,54 @@
   }
 
   .example__photo-switch {
-    width: 8px;
-    height: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    border: 13px solid @white;
-    border-radius: 50%;
-    background-color: @apple;
-    top: -14px;
-    left: 199px;
+    top: 0;
+    background-color: rgb(220, 220, 220);
+    border-color: rgb(220, 220, 220);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 210px;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+
+    &::before {
+      width: 34px;
+      height: 34px;
+      background-color: @white;
+      border: 1px solid rgb(220, 220, 220);
+      box-shadow: 0 2px 7px rgb(220, 220, 220);
+    }
+
+    &::after {
+      top: -2px;
+      width: 8px;
+      height: 8px;
+      background-color: @apple;
+    }
+
+    &:hover::before {
+      box-shadow: 0 2px 7px rgb(200, 200, 200);
+    }
+
+    &:active::before {
+      border: 1px solid @apple;
+    }
   }
+
+  // .example__photo-switch {
+  //   width: 8px;
+  //   height: 8px;
+  //   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  //   border: 13px solid @white;
+  //   border-radius: 50%;
+  //   background-color: @apple;
+  //   top: -14px;
+  //   left: 199px;
+  // }
 }
 
 @media (min-width: @desktop-width) {
