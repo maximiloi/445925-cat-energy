@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 24px;
-  padding-left: 20px;
   border-bottom: 1px solid @mercury;
 }
 
@@ -88,6 +87,7 @@
   margin: 10px auto 0;
   padding-bottom: 24px;
   border-bottom: 1px solid @mercury;
+  background-color: transparent;
   background-image: url("@{images}/icon-plus-mobile.svg");
   background-position: 50% 18px;
   background-size: 30px 30px;
@@ -120,7 +120,6 @@
 }
 
 .product__more-button {
-  margin-left: 20px;
   background-color: @concrete;
   color: @black;
   font-weight: 400;
@@ -156,7 +155,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 56px;
     padding: 0;
   }
 
@@ -171,8 +170,9 @@
     justify-content: flex-end;
     border: none;
     align-items: center;
-    background-image: linear-gradient(to top, @concrete 431px, transparent 431px);
-    min-height: 523px;
+    background-color: @concrete;
+    background-image: linear-gradient(to bottom, @white 80px, transparent 80px);
+    min-height: 511px;
   }
 
   .product__tablet {
@@ -229,6 +229,7 @@
     width: 322px;
     height: 430px;
     border: 1px solid @alto;
+    background-color: transparent;
     background-image: url("@{images}/icon-plus.svg");
     background-position: 50% 54px;
     background-size: 60px 60px;
@@ -258,12 +259,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .product {
+    margin-bottom: 5px;
+  }
+
   .product__title {
-    margin: 0;
-    margin-left: 110px;
+    margin: 0 auto;
     margin-top: 43px;
     margin-bottom: 85px;
     padding: 0;
+    width: 100%;
+    max-width: 1220px;
   }
 
   .product__list {

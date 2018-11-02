@@ -294,48 +294,40 @@
           <li class="extra-product__item">
             <div class="extra-product__wrapper">
               <h3 class="extra-product__item-title">Сахарозаменитель</h3>
-              <table class="extra-product__item-info">
-                <tr>
-                  <td>1 упаковка (100 г)</td>
-                  <td>100 Р.</td>
-                </tr>
-              </table>
+              <div class="extra-product__item-info">
+                1 упаковка (100 г)
+                <span>100 Р.</span>
+              </div>
             </div>
             <a class="extra-product__item-buy  button extra-product__button" href="cart.html" onclick="alert('Модальное окно')">Заказать</a>
           </li>
           <li class="extra-product__item">
             <div class="extra-product__wrapper">
               <h3 class="extra-product__item-title">Питьевая вода</h3>
-              <table class="extra-product__item-info">
-                <tr>
-                  <td>5 литров</td>
-                  <td>50 Р.</td>
-                </tr>
-              </table>
+              <div class="extra-product__item-info">
+                5 литров
+                <span>50 Р.</span>
+              </div>
             </div>
             <a class="extra-product__item-buy  button extra-product__button" href="cart.html" onclick="alert('Модальное окно')">Заказать</a>
           </li>
           <li class="extra-product__item">
             <div class="extra-product__wrapper">
               <h3 class="extra-product__item-title">Молоко</h3>
-              <table class="extra-product__item-info">
-                <tr>
-                  <td>1 литр</td>
-                  <td>100 Р.</td>
-                </tr>
-              </table>
+              <div class="extra-product__item-info">
+                1 литр
+                <span>100 Р.</span>
+              </div>
             </div>
             <a class="extra-product__item-buy  button extra-product__button" href="cart.html" onclick="alert('Модальное окно')">Заказать</a>
           </li>
           <li class="extra-product__item">
             <div class="extra-product__wrapper">
               <h3 class="extra-product__item-title">Витамины</h3>
-              <table class="extra-product__item-info">
-                <tr>
-                  <td>1 упаковка (30 г)</td>
-                  <td>300 Р.</td>
-                </tr>
-              </table>
+              <div class="extra-product__item-info">
+                1 упаковка (30 г)
+                <span>300 Р.</span>
+              </div>
             </div>
             <a class="extra-product__item-buy  button extra-product__button" href="cart.html" onclick="alert('Модальное окно')">Заказать</a>
           </li>
@@ -372,7 +364,7 @@
 
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a>
+        <a href="index.html">
           <img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип в футтере">
         </a>
       </div>
@@ -403,12 +395,16 @@
         </ul>
       </div>
 
-      <div class="page-footer__copyright  copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__text">HTML Academy</p>
-        </a>
-      </div>
+      <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span>HTML Academy</span>
+            <svg class="copyright__link-icon" width="40" height="40">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
     </div>
+
   </footer>
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>
