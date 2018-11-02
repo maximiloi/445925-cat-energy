@@ -1,30 +1,33 @@
-.extra-product__title {
+.extra-product {
   position: relative;
-  margin-top: 28px;
-  margin-bottom: 34px;
-  margin-left: 19px;
-  font-weight: 400;
-  font-size: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
-  line-height: 24px;
-
-  span {
-    position: relative;
-    z-index: 2;
-    padding-right: 20px;
-    background-color: @white;
-  }
+  display: flex;
+  flex-direction: column;
 
   &::after {
+    content: "";
     position: absolute;
-    top: 14px;
+    top: 43px;
     right: 0;
-    z-index: 1;
     width: 100%;
     height: 3px;
     background-color: @apple;
-    content: " ";
+    z-index: -1;
   }
+}
+
+.extra-product__title {
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 14px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.extra-product__title span {
+  padding-left: 19px;
+  padding-right: 24px;
+  background-color: @white;
 }
 
 .extra-product__list {
@@ -107,22 +110,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .extra-product {
+    &::after {
+      top: 32px;
+    }
+  }
+
   .extra-product__title {
-    margin-bottom: 81px;
-    margin-left: 0;
-    padding-right: 36px;
+    margin: 0;
+    padding-left: 28px;
+    margin-bottom: 67px;
     font-size: 36px;
     line-height: 36px;
+  }
 
-    &::after {
-      top: 23px;
-    }
-
-    & span {
-      margin-left: 29px;
-      padding-right: 36px;
-      padding-left: 38px;
-    }
+  .extra-product__title span {
+    padding-left: 39px;
+    padding-right: 37px;
   }
 
   .extra-product__list {
@@ -199,14 +203,33 @@
 }
 
 @media (min-width: @desktop-width) {
-  .extra-product__title {
-    &::after {
-      width: 100%;
-    }
+  .extra-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-    & span {
-      margin-left: 67px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: @apple;
+      z-index: -1;
     }
+  }
+
+  .extra-product__title {
+    margin: 0 auto;
+    width: 1282px;
+    padding-left: 0;
+    margin-bottom: 67px;
+  }
+
+  .extra-product__title span {
+    margin-left: -10px;
+    padding-left: 40px;
   }
 
   .extra-product__wrapper-desktop {

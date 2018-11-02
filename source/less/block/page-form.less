@@ -212,14 +212,12 @@
   position: relative;
   margin-right: -18px;
   left: -35px;
-  fill: @mine-shaft;
 }
 
 .page-form__contact-icon-phone {
   position: relative;
   margin-right: -20px;
   left: -38px;
-  fill: @red;
 }
 
 .page-form__comment-title {
@@ -381,6 +379,11 @@
     line-height: 20px;
   }
 
+  .page-form__wrapper-title {
+    margin: 0 auto;
+    width: 768px;
+  }
+
   .page-form__title {
     margin-top: 26px;
     margin-bottom: 56px;
@@ -484,18 +487,34 @@
     width: 628px;
   }
 
-  .page-form__contact-title {
+  .page-form__contact {
     position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: @apple;
+      z-index: -1;
+    }
+  }
+
+  .page-form__contact-title {
+    width: 768px;
+    position: relative;
+    margin: 0 auto;
     margin-top: 28px;
     margin-bottom: 75px;
-    margin-left: 0;
-    padding-right: 57px;
     font-size: 36px;
     line-height: 36px;
 
     &::after {
       top: 22px;
-      left: 0;
       width: 100%;
     }
 
@@ -512,10 +531,14 @@
     }
   }
 
-  .page-form__contact-ul {
+  .page-form__wrapper-contact {
     margin: 0 auto;
+    width: 632px;
+  }
+
+  .page-form__contact-ul {
+    margin: 0;
     margin-bottom: 63px;
-    width: 628px;
 
     & label {
       margin-right: 20px;
@@ -543,10 +566,32 @@
     background-position: 97% 50%;
   }
 
+  .page-form__wrapper-comment {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  .page-form__comment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: @apple;
+      z-index: -1;
+    }
+  }
+
   .page-form__comment-title {
+    width: 768px;
+    margin: 0 auto;
     margin-bottom: 77px;
-    margin-left: 0;
-    padding-right: 57px;
     font-size: 36px;
     line-height: 36px;
 
@@ -573,10 +618,27 @@
     line-height: 30px;
   }
 
+  .page-form__extra {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: @apple;
+      z-index: -1;
+    }
+  }
+
   .page-form__extra-title {
+    width: 768px;
+    margin: 0 auto;
     margin-bottom: 67px;
-    margin-left: 0;
-    padding-right: 57px;
     font-size: 36px;
     line-height: 36px;
 
@@ -638,6 +700,11 @@
     }
   }
 
+  .page-form__wrapper-button {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .page-form__button {
     margin-bottom: 73px;
     margin-left: 70px;
@@ -697,17 +764,46 @@
   }
 
   .page-form__contact {
-    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: @apple;
+      z-index: -1;
+    }
   }
 
   .page-form__contact-title {
-    &::after {
-      width: 100%;
-    }
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+    padding: 0;
+    padding-top: 28px;
+    padding-bottom: 34px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
 
-    & span {
-      margin-left: 67px;
+    &::after {
+      top: 50px;
     }
+  }
+
+  .page-form__contact-title span {
+    margin: 0;
+    margin-left: -10px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: @white;
   }
 
   .page-form__wrapper-contact {
@@ -733,8 +829,13 @@
     background-position: 96% 50%;
   }
 
+  .page-form__comment::after {
+    top: 7px;
+  }
+
   .page-form__comment-title {
-    margin-top: -17px;
+    width: 1440px;
+    margin-top: -16px;
 
     &::after {
       width: 100%;
@@ -756,7 +857,12 @@
     margin-bottom: 65px;
   }
 
+  .page-form__extra::after {
+    top: 25px;
+  }
+
   .page-form__extra-title {
+    width: 1440px;
     margin-top: 2px;
 
     &::after {
