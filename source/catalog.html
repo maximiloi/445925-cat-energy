@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -307,7 +307,6 @@
               <div class="extra-product__item-info">
                 5 литров
                 <span>50 Р.</span>
-                </tr>
               </div>
             </div>
             <a class="extra-product__item-buy  button extra-product__button" href="cart.html" onclick="alert('Модальное окно')">Заказать</a>
@@ -396,12 +395,16 @@
         </ul>
       </div>
 
-      <div class="page-footer__copyright  copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__text">HTML Academy</p>
-        </a>
-      </div>
+      <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span>HTML Academy</span>
+            <svg class="copyright__link-icon" width="40" height="40">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
     </div>
+
   </footer>
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>
